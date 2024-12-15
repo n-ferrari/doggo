@@ -23,3 +23,36 @@ function Home() {
 }
 export default Home;
 ```
+
+- Run server
+  - Run npm run dev
+- Create .gitignore file
+
+- Create branch
+
+  - git branch code-formatter
+  - git checkout code-formatter
+  - git push -u origin code-formatter
+
+- Create .editorconfig
+
+  - Add this code inside
+
+  ```javascript
+  root = true
+  [*]
+  indent_style = space
+  indent_size = 2
+  ```
+
+  - Enable the extension EditorConfig
+
+- Configure prettier
+  - npm install prettier -D
+  - add "lint:check": "prettier --check ." in the scripts
+  - add "lint:fix": "prettier --write ." in the scripts
+  - Run npm run lint:check
+  - Run npm run lint:fix
+  - Install prettier from extensions
+  - Select prettier as Editor: Default Formatter in the VSCode configurations
+  - Turn autosave off
